@@ -29,7 +29,7 @@ console.log (firstName + lastName)
 
 //problem 2
 
-var carArray= [['VANQUISH', 'VALKYRIE', 'VANTAGE'],['FLY SPUR', 'BENTAYGA', 'CONTINENTALGT'], ['3 SERIES', 'XS SERIES', 'I8']];
+var carArray = [['VANQUISH', 'VALKYRIE', 'VANTAGE'],['FLY SPUR', 'BENTAYGA', 'CONTINENTALGT'], ['3 SERIES', 'XS SERIES', 'I8']];
 for (var i = 0; i < carArray.length; i++) {
 	if (i === 0) {
 		console.log ('Aston Martin');
@@ -38,21 +38,33 @@ for (var i = 0; i < carArray.length; i++) {
 	} else {
 		console.log ('BMW:');
 	}
-	for (var j = 0; j < carArray.length; j++)
+	for (var j = 0; j < carArray.length; j++){
 		console.log (carArray[i][j]);
+	}
 }
 
 //problem 3
+/*
+var answer = prompt ("whats your favorite number?")
 function fav(answer) {
-	console.log('what is your favorite foods?' + answer)
-	if (answer = 100) {
-		alert= 'you are under 100 character count'
-		} else if (answer => 100) {
-			alert= 'you are avout 100 character count.'
+	console.log(answer + 'is great!')
+	if (answer == 100) {
+		alert('you are under 100 character count')
+		} else if (answer > 100) {
+			alert('you are about 100 character count.')
 		}
 }
-var answer = prompt ("whats your favorite number?")
+*/
 
+function fav(number) {
+	if (number > '100') {
+		alert(number + 'is under 100 character count.')
+	} else {
+		alert(number + 'is greater 100 character count.')
+	}
+}
+var number = prompt("whats your favorite number?");
+fav(number);
 
 //problem 4
 function userGreeting(name) {
@@ -62,23 +74,22 @@ var userName = prompt ('What is your name?');
 userGreeting(userName);
 
 // problem 5
-function printGreeting(personName){
-	console.log('Hello, my name is ' + personName + '.');
-}
-printGreeting('Sammy');
+var greeting = "I'm a great function"
+	console.log(greeting);
+
 
 //problem 6
 function behindTheDoor(answer) {
 
-	if (answer === 'door1'){
+	if (answer === 'door 1'){
 		alert('goat!')
-	} else if (answer === 'door2'){
+	} else if (answer === 'door 2'){
 		alert('jeep!')
 	}else {
 		alert ('can of worms!')
 	}
 }
-var answer = prompt ('what are behind these doors1, door 2 or door3?');
+var answer = prompt ('what are behind these doors 1, door 2 or door 3?');
 behindTheDoor(answer);
 
 
