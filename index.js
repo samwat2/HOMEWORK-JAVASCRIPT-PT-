@@ -44,23 +44,23 @@ for (var i = 0; i < carArray.length; i++) {
 }
 
 //problem 3
-/*
+
 var answer = prompt ("whats your favorite number?")
 function fav(answer) {
-	console.log(answer + 'is great!')
-	if (answer == 100) {
-		alert('you are under 100 character count')
+	console.log(answer + 'is great!');
+	if (answer < 100) {
+		alert('you are under 100 character count');
 		} else if (answer > 100) {
-			alert('you are about 100 character count.')
+			alert('you are about 100 character count.');
 		}
 }
-*/
+
 
 function fav(number) {
 	if (number > '100') {
-		alert(number + 'is under 100 character count.')
+		alert(number + 'is under 100 character count.');
 	} else {
-		alert(number + 'is greater 100 character count.')
+		alert(number + 'is greater 100 character count.');
 	}
 }
 var number = prompt("whats your favorite number?");
@@ -74,9 +74,11 @@ var userName = prompt ('What is your name?');
 userGreeting(userName);
 
 // problem 5
-var greeting = "I'm a great function"
-	console.log(greeting);
 
+function noArgu(){
+	console.log(`I'm a great function`);
+}
+noArgu();
 
 //problem 6
 function behindTheDoor(answer) {
